@@ -1,0 +1,332 @@
+html,
+body {
+  font-family: Inter;
+  color: #fff;
+  overflow-x: hidden;
+  background-color: #0f0f0f;
+}
+
+
+.container {
+  max-width: 1260px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.button {
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  border-radius: 5px;
+  background-color: #e45502;
+  border: 2px solid #e45502;
+  color: #fff;
+  transition: all .3s;
+
+  &:hover {
+    background-color: inherit;
+  }
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading__subtitle {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.heading__title {
+  font-size: 46px;
+  font-weight: 700;
+}
+
+.about {
+  padding: 150px 0;
+}
+
+.program {
+  background-color: #272727;
+  padding: 150px 0;
+}
+
+.free {
+  padding: 150px 0;
+}
+
+/*-----------------Header TOP--------------------------*/
+.header__top {
+  background-color: #181818;
+  padding: 22px 0;
+}
+
+.header__top-inner {}
+
+.header__nav {}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  img {
+    width: 80px;
+    height: 50px;
+  }
+}
+
+.header__list {
+  display: flex;
+  justify-content: center;
+}
+
+.header__item {
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+.header__link {
+  transition: all .3s;
+
+  &:hover {
+    background-color: #e45502;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+}
+
+.header__body {
+  background-color: #000;
+  position: relative;
+  height: 829px;
+}
+
+.header__cover {
+  img {
+    opacity: 0.4;
+    position: absolute;
+  }
+}
+
+.header__content {
+  position: relative;
+  padding-top: 250px;
+  width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.header__title {
+  h3 {
+    display: inline-flex;
+    font-size: 41px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  h1 {
+    font-size: 90px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+}
+
+.header__text {
+  p {
+    font-size: 18px;
+    margin-bottom: 5px;
+    line-height: 150%;
+  }
+
+  margin-bottom: 25px;
+}
+
+/*-----------------program--------------------------*/
+.program__heading {
+  margin-bottom: 50px;
+}
+
+.program__list {
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(2, auto);
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.program__item {
+  max-width: 500px;
+
+  img {
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+
+.program__title {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.program__text {
+  text-align: center;
+  margin-bottom: 15px;
+  line-height: 125%;
+}
+
+/*-----------------about--------------------------*/
+.about__heading {
+  margin-bottom: 50px;
+}
+
+.about__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__text {
+  max-width: 500px;
+  margin: auto 0;
+
+  p {
+    line-height: 125%;
+
+  }
+}
+
+.about__accent {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.about__img {
+  img {
+    width: 615px;
+    border-radius: 5px;
+  }
+}
+
+/*-----------------free--------------------------*/
+.free__inner {}
+
+.free__heading {
+  margin-bottom: 50px;
+}
+
+.free__body {}
+
+.free__filter-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.free__filter-item {
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+.free__filter-btn {
+  background-color: #e45502;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all .3s;
+}
+
+.free__filter-btn--active {
+  background-color: #fff;
+  color: #000;
+}
+
+.free__list {
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(3, auto);
+  gap: 30px;
+  justify-content: center;
+}
+
+.free__list-item {
+  max-width: 390px;
+  background-color: #272727;
+  border: 1px solid #272727;
+  border-radius: 5px;
+}
+
+.free__list-item--shoot {
+  .free__link-tag {
+    background-color: rgb(116, 0, 0);
+  }
+}
+
+.free__image-box {
+  margin-bottom: 10px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.free__link-content {
+  padding: 25px;
+}
+
+.free__link-tag {
+  display: inline-block;
+  padding: 6px 8px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.free__link-text {
+  font-size: 14px;
+  line-height: 125%;
+  margin-bottom: 20px;
+}
+
+.free__link-btn {
+  padding: 8px 10px;
+  font-weight: 500;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.free__link-fvr {
+  background-color: rgb(255, 217, 0);
+  border-radius: 3px;
+}
+
+.free__list-item--pass {
+  .free__link-tag {
+    background-color: green;
+  }
+}
+
+.free__link-text {}
+
+.free__list-item--fints {
+  .free__link-tag {
+    background-color: purple;
+  }
+}
+
+.free__list-item--defend {
+  .free__link-tag {
+    background-color: blue;
+  }
+}
+
+.free__list-item--goalkeeper {
+  .free__link-tag {
+    background-color: rgb(0, 125, 184);
+  }
+}
